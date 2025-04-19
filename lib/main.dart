@@ -15,7 +15,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Message Board App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primaryColor: const Color.fromARGB(255, 60, 59, 110),
+        scaffoldBackgroundColor: Colors.white,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color.fromARGB(255, 60, 59, 110),
+          foregroundColor: Colors.white,
+        ),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+          secondary: const Color.fromARGB(255, 60, 59, 110),
+        ),
+      ),
       home: SplashScreen(),
       debugShowCheckedModeBanner: false,
     );
