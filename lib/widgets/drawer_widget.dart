@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../screens/home_screen.dart';
-import '../screens/profile_screen.dart';
+import 'package:hw4/screens/profile_screen.dart';
 import '../screens/settings_screen.dart';
 
 class DrawerWidget extends StatelessWidget {
